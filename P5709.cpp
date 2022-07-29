@@ -11,10 +11,10 @@ int main(){
         cout << 0<<endl;
         return 0;
     }
-    if(s/t-(int)(s/t)>0){
-        cout << m - (int)(s/t)-1<<endl;
-        return 0; 
+    if(t%s!=0&&s<t){
+       cout << (int)(m - (s/t))-1<<endl;
+       return 0; 
     }
-    cout << m - (int)(s/t)<<endl;
+    cout << (int)(m - (s/t))<<endl;
     return 0;
 }
